@@ -5,14 +5,14 @@
     - [mini-grep](#mini-grep)
     - [mini-ls](#mini-ls)
   - [About the Solution](#about-the-solution)
-    - [Directory structure:](#directory-structure)
+    - [Directory Structure](#directory-structure)
     - [Building The Binaries](#building-the-binaries)
     - [General Notes](#general-notes)
 - [References](#references)
 
 # Mini Utils Assignmnent
 ## Description
-Solution for "mini-utils" take-home assignment. Using Python, I have chosen to implement:
+Solution for "mini-utils" take-home assignment. Using Python, I have chosen to implement two out of the three provided:
 - `mini-grep` 
 - `mini-ls` 
 
@@ -61,6 +61,12 @@ python3 src/mini-grep.py -e "[\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b" tests/data
 
 Example mini-grep output:
 
+```
+╭─alaa@void rh-mini-utils-assignment ‹main●› 
+╰─$ echo 'hello\n123' | python3 src/mini-grep.py -e "[0-9]"
+2:123
+```
+
 ![alt text](./assets/mini-grep-output.png)
 
 ---------------
@@ -90,15 +96,26 @@ python3 src/mini-ls.py tests/paths-to-ls.log -r
 ```
 
 
-Example mini-ls output:
+Examples mini-ls output:
 
+```
+╭─alaa@void rh-mini-utils-assignment ‹main●› 
+╰─$  python3 src/mini-ls.py tests/paths-to-ls.log -r          
+---OMITTED---
+/var/log/uucp - directory - Owner: _uucp:wheel,Permission: 755, Modified Time: 2024-10-12 13:03:21+00:00
+/var/log/fsck_apfs.log - file - Owner: root:wheel,Permission: 644, Modified Time: 2024-10-18 16:09:49.316468+00:00
+tests/dir-to-ls/sub-dir - directory - Owner: alaa:staff,Permission: 755, Modified Time: 2024-10-29 16:44:18.868580+00:00
+tests/dir-to-ls/sub-dir/sub-dir-file - file - Owner: alaa:staff,Permission: 644, Modified Time: 2024-10-29 16:44:43.553972+00:00
+tests/dir-to-ls/sub-dir/sub-sub-dir - directory - Owner: alaa:staff,Permission: 755, Modified Time: 2024-10-29 16:44:26.112077+00:00
+tests/dir-to-ls/sub-dir/sub-sub-dir/sub-sub-dir-file - file - Owner: alaa:staff,Permission: 644, Modified Time: 2024-10-29 16:44:49.789495+00:00
+tests/dir-to-ls/parent-dir-file - file - Owner: alaa:staff,Permission: 644, Modified Time: 2024-10-29 16:44:51.620326+00:00
+```
 ![alt text](./assets/mini-ls-output.png)
 
---------------
---------------
 ---------
+
 ## About the Solution
-### Directory structure:
+### Directory Structure
 ```bash
 .
 ├── LICENSE
