@@ -1,5 +1,23 @@
-# rh-mini-utils-assignment
-Solution for "mini-utils" take-home assignment 
+# Minit Utils Assignmnent
+Solution for "mini-utils" take-home assignment. I have chosen to implement:
+- `mini-grep` 
+- `mini-ls` - still WIP if you're reading this, delivery in few hours. :)
+
+Languages used is Python as confirmed. 
+
+Directory structure:
+```bash
+.
+├── LICENSE
+├── README.md
+├── bin
+├── coding_assignment.md
+├── mini-grep
+├── src
+│   └── mini-grep.py
+└── tests
+    └── data-to-grep.log
+```
 
 
 # Description
