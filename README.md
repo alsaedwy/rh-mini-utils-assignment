@@ -20,10 +20,14 @@ Directory structure:
 ```
 
 
+
+
 # Description
 - argparse -> standard
 - All linted using PEP8 -> Black
 
+
+> pathlib implements path operations using PurePath and Path objects, and so it’s said to be object-oriented. On the other hand, the os and os.path modules supply functions that work with low-level str and bytes objects, which is a more procedural approach. Some users consider the object-oriented style to be more readable.
 
 ## Some complex regex examples
 ```bash
@@ -42,3 +46,10 @@ Directory structure:
 - [Argparse Reference](https://docs.python.org/3/library/argparse.html)
 - [re — Regular expression operations](https://docs.python.org/3/library/re.html)
 
+- https://docs.python.org/3/whatsnew/3.5.html#pep-471-os-scandir-function-a-better-and-faster-directory-iterator
+
+
+- https://docs.python.org/3/library/pathlib.html#comparison-to-the-os-and-os-path-modules
+
+
+https://stackoverflow.com/questions/61004092/how-to-interpret-os-stat-st-mode-value

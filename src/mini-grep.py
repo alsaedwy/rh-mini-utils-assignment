@@ -1,5 +1,5 @@
 """
-Given Definition (from ./coding_assignment.md)
+Given Definition (from ../coding_assignment.md)
 ----------------------------------------------
 1. "mini-grep"
 --------------
@@ -46,7 +46,7 @@ def initiate_argparser():
         - Required: pattern (-e)
         - Optional: quiet mode (-q)
 
-    - Returns the parsed arguments
+    - Returns the parsed arguments passed to the script
     """
     parser = argparse.ArgumentParser(
         description="mini-grep: Search for PATTERN in each FILE.")
@@ -81,6 +81,8 @@ def main():
         logger.exception(f"Invalid regex pattern: {args.pattern}")
         sys.exit(1)
 
+    # TODO: [Enhancement]: Just adding for awareness, check if the give file name/path is valid
+    #       & handle errors if not (currently error-handled by argparse.FileType)
     for file in args.files:
         for i, line in enumerate(file, 1):
 
