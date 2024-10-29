@@ -20,14 +20,13 @@ the line number of each printed line.
 ----------------------------------------------
 
 Logical steps for me to implement:
-- [x] 1. Read file
-- [x] 2. Search for pattern in each line
+- [x] 1. Read file(s) - if no file is given, read from stdin
+- [x] 2. Validate the regex pattern, if invalid, exit gracefully
+- [x] 2.1 Search for pattern in each line
 - [x] 3. Print line & number if pattern is found
 - [x] 3.1 If quiet mode is enabled, only print the line
 - [x] 4. If no file is given, read from stdin
-
-Additional steps:
-- [x] Handle invalid regex pattern errors (try-except)
+- [x] Add docstrings & test the functionality with multiple files & stdin and diffrent [invalid] regex 
 """
 
 import re
