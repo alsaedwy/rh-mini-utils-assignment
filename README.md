@@ -7,6 +7,8 @@
   - [About the Solution](#about-the-solution)
     - [Directory Structure](#directory-structure)
     - [Building The Binaries](#building-the-binaries)
+      - [Steps to build the binaries](#steps-to-build-the-binaries)
+      - [Usage of the binaries](#usage-of-the-binaries)
     - [General Notes](#general-notes)
 - [References](#references)
 
@@ -144,6 +146,7 @@ tests/dir-to-ls/parent-dir-file - file - Owner: alaa:staff,Permission: 644, Modi
 - Tested on macOS (ZSH).
 
 ***In case you want to build the binaries yourself, you can run the following commands:***
+#### Steps to build the binaries
 ```bash
 # 1. Install pyinstaller
 pip install --upgrade pyinstaller  
@@ -162,7 +165,7 @@ dist
 └── mini-ls
 ```
 
-Usage of the binaries:
+#### Usage of the binaries
 ```bash
 # Assuming you're in the root directory of this repo
 cd dist
@@ -170,6 +173,8 @@ cd dist
 ./mini-ls -h 
 # (You can reference the examples above for testing data)
 ```
+
+----------
 
 ### General Notes
 - Both files (`src/mini-grep.py` and `src/mini-ls.py`) are formatted with [`black`](https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html) (uses `PEP8`).
@@ -194,4 +199,4 @@ cd dist
 - [pathlib — Object-oriented filesystem paths](https://docs.python.org/3/library/pathlib.html#)
 - [Why I choose os.scandir()](https://docs.python.org/3/whatsnew/3.5.html#pep-471-os-scandir-function-a-better-and-faster-directory-iterator)
 - [Comparison to the os and os.path modules](https://docs.python.org/3/library/pathlib.html#comparison-to-the-os-and-os-path-modules)
-- Since os.stat().st_mode returns File mode: file type and file mode bits (permissions), I referenced to this page to understand how to extract the file permissions from the mode bits: [Numeric Notation](https://en.wikipedia.org/wiki/File_system_permissions#Numeric_notation)
+- Since os.stat().st_mode returns file mode bits (permissions), I referenced to this page to understand how to extract the file permissions from the mode bits: [Numeric Notation](https://en.wikipedia.org/wiki/File_system_permissions#Numeric_notation)
