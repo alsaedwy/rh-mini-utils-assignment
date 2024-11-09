@@ -189,7 +189,6 @@ cd dist
   - `sys` for system-specific parameters and functions (standard input for mini-grep)
 - `src` directory contains the source files for the utilities, while `tests` contains the test data and the test files.
 - While the solutions are "simple" implementations, I've tried to handle some edge cases with the if conditions, and added "NOTE"s and "TODO"s where I thought it was necessary to mark a potential improvement or enhancement.
-- No AI was used, only human intelligence. I really do write clean code and super boring-ly elaborate READMEs. :) 
 
 # References
 - [YouTube - Argparse Basics](https://www.youtube.com/watch?v=FbEJN8FsJ9U)
